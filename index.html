@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho DOM</title>
+</head>
+<body>
+    <div id="divprincipal">Passe o mouse aqui</div>
+    <img id="imagem" src="https://media.tenor.com/-4Q4yt7wyS8AAAAM/monkey-wtf-monkey-gasp.gif" style="display: none;">
+    <script>
+        var div = document.getElementById("divprincipal");
+        var image = document.getElementById("imagem");
+        div.addEventListener("mouseover", function() {
+            image.style.display = "block";
+        });
+        div.addEventListener("mouseout", function() {
+            image.style.display = "none";
+        });
+    </script>
+</body>
+</html>
